@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retreived.
   #
-  s.source   = { :git => 'git://github.com/jaykz52/CKCalendar.git' }
+  s.source   = { :git => 'git@github.com:solanoluz/CKCalendar.git' }
   # s.source   = { :svn => 'http://EXAMPLE/CKCalendar/tags/1.0.0' }
   # s.source   = { :hg  => 'http://EXAMPLE/CKCalendar', :revision => '1.0.0' }
 
