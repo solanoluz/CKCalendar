@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retreived.
   #
-  s.source   = { :git => 'git@github.com:solanoluz/CKCalendar.git' }
+  s.source   = { git: 'git://github.com/solanoluz/CKCalendar.git', branch: 'master' }
   # s.source   = { :svn => 'http://EXAMPLE/CKCalendar/tags/1.0.0' }
   # s.source   = { :hg  => 'http://EXAMPLE/CKCalendar', :revision => '1.0.0' }
 
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   # over the selected files.
   # (See http://rake.rubyforge.org/classes/Rake/FileList.html.)
   #
-  s.source_files = 'Source', 'Source/**/*.{h,m}'
+  s.source_files = 'Source/*.{h,m}'
 
   # A list of resources included with the Pod. These are copied into the
   # target bundle with a build phase script.
