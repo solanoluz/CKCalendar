@@ -35,8 +35,22 @@
 
 @interface GradientView : UIView
 
-@property(nonatomic, strong, readonly) CAGradientLayer *gradientLayer;
++ (UIImage *)imageNamed:(NSString *)name withColor:(UIColor *)color;
 - (void)setColors:(NSArray *)colors;
+- (NSArray *)getDaysOfTheWeek;
+- (void)setDefaultStyle;
+- (NSInteger)numberOfWeeksInMonthContainingDate:(NSDate *)date;
+- (NSDate *)firstDayOfMonthContainingDate:(NSDate *)date;
+- (BOOL)dateIsInMonthShowing:(NSDate *)date;
+- (BOOL)date:(NSDate *)date1 isSameDayAsDate:(NSDate *)date2;
+- (BOOL)dateIsToday:(NSDate *)date;
+- (CGRect)calculateDayCellFrame:(NSDate *)date;
+- (NSDate *)nextDay:(NSDate *)date;
+- (NSDate *)firstDayOfMonthContainingDate:(NSDate *)date;
+- (NSInteger)weekNumberInMonthForDate:(NSDate *)date;
+- (NSInteger)placeInWeekForDate:(NSDate *)date;
+
+@property(nonatomic, strong, readonly) CAGradientLayer *gradientLayer;
 
 @end
 
